@@ -1,0 +1,32 @@
+soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/google/pixel/usb",
+        "hardware/google/pixel/pixelstats",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vendor_mediatek_hardware_dmc_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.dmc@1.0::IDmcService",
+        "vendor.mediatek.hardware.dmc@1.1::IDmcService",
+        "vendor.mediatek.hardware.dmc@1.2::IDmcService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vendor_mediatek_hardware_apmonitor_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.apmonitor@2.0::IApmService",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vendor_mediatek_hardware_mtkcodecservice_interface",
+    interfaces: [
+        "vendor.mediatek.hardware.mtkcodecservice@1.1::IMtkCodecService",
+    ],
+}
+
